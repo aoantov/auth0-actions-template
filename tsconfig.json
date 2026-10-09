@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "types": ["vite/client", "vitest/globals", "node"],
+    "lib": ["ES2020"],
+    "module": "CommonJS",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "baseUrl": "./",
+    "sourceMap": false,
+    "paths": {
+      "@handlers/*": ["src/handlers/*"],
+      "@common/*": ["src/common/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules/**/*", ".vscode/**/*", ".idea/**/*", ".github/**/*", "scripts/**/*"]
+}
