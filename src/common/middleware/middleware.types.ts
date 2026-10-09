@@ -4,6 +4,7 @@ export interface MiddlewareTypesMap {
     event: Event;
     api: PostLoginAPI;
   };
+  // TODO: Add more types as the application needs grow
 }
 
 export type Auth0MiddlewareOptions<K extends keyof MiddlewareTypesMap> = {

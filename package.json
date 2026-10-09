@@ -9,7 +9,7 @@
     "prettier": "prettier --write '**/*'",
     "prettier:check": "prettier --check '**/*'"
   },
-  "description": "Service Now Client library",
+  "description": "A template for Auth0 Actions",
   "devDependencies": {
     "@auth0/actions": "^0.34.0",
     "@types/bent": "^7.3.8",
