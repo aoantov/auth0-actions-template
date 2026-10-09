@@ -1,7 +1,6 @@
 export enum ErrorCode {
-  NO_CIAM = 'no_ciam',
-  NO_EMAIL = 'no_email',
-  UNSUPPORTED_TENANT = 'unsupported_tenant',
+  //TODO: change to whatever is a custom error for  the project
+  Example = 'example',
 }
 
 export class ActionError extends Error {
