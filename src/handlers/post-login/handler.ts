@@ -1,4 +1,5 @@
 import type { Event, PostLoginAPI } from '@auth0/actions/post-login/v3';
+import { postLoginErrorHandler } from '@common/action-error';
 import { auth0Middleware } from '@common/middleware/middleware';
 
 const NAME_CLAIM = 'userEmail';
@@ -11,4 +12,5 @@ const handler = async (event: Event, api: PostLoginAPI): Promise<void> => {
 
 export const onExecutePostLogin = auth0Middleware<'postLogin'>(handler, {
   condition: event => !!event.user.email,
+  errorHandler: postLoginErrorHandler,
 });
